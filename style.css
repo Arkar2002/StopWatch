@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    width: 450px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+h2{
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.display{
+    color: #fff;
+    font-size: 40px;
+    background-color: steelblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: none;
+    position: relative;
+}
+
+.milli::before {
+    font-size: 14px;
+    width: 50%;
+    content: attr(data-test);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+}
+
+.control{
+    margin-top: 20px;
+}
+
+.btn{
+    background-color: steelblue;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn:focus{
+    opacity: 0.8;
+}
+
+.mode-btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
